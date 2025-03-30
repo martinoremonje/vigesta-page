@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 function App() {
   useEffect(() => {
@@ -17,57 +18,32 @@ function App() {
 
       <section
         data-aos="fade-up"
-        style={{
-          minHeight: 'calc(100vh - 60px)', // Ajusta 60px según la altura de tu NavBar
-          padding: '50px',
-          backgroundColor: '#f0f0f0',
-          margin: '20px',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          flexDirection: 'column',
-        }}
+        className="min-h-[calc(100vh-60px)] p-8 bg-gray-100 m-4 flex flex-col justify-center items-center"
       >
-        <h2>Sección 1 - Fade Up Right</h2>
-        <p>Esta sección ocupa casi toda la altura de la pantalla, excepto el NavBar.</p>
-        <p>Aquí puedes agregar más contenido.</p>
+        <h2 className="text-2xl font-semibold mb-4 text-center">Sección 1 - Fade Up Right</h2>
+        <p className="text-center">Esta sección ocupa casi toda la altura de la pantalla, excepto el NavBar.</p>
+        <p className="text-center">Aquí puedes agregar más contenido.</p>
       </section>
 
       <section
         data-aos="fade-left"
-        style={{
-          minHeight: 'calc(100vh - 60px)',
-          padding: '50px',
-          backgroundColor: '#e0e0e0',
-          margin: '20px',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          flexDirection: 'column',
-        }}
+        className="min-h-[calc(100vh-60px)] p-8 bg-gray-200 m-4 flex flex-col justify-center items-center"
       >
-        <h2>Sección 2 - Fade Up Central</h2>
-        <p>Esta sección también ocupa casi toda la altura de la pantalla.</p>
-        <p>Puedes personalizar el contenido y los estilos.</p>
+        <h2 className="text-2xl font-semibold mb-4 text-center">Sección 2 - Fade Up Central</h2>
+        <p className="text-center">Esta sección también ocupa casi toda la altura de la pantalla.</p>
+        <p className="text-center">Puedes personalizar el contenido y los estilos.</p>
       </section>
 
       <section
         data-aos="fade-right"
-        style={{
-          minHeight: 'calc(100vh - 60px)',
-          padding: '50px',
-          backgroundColor: '#d0d0d0',
-          margin: '20px',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          flexDirection: 'column',
-        }}
+        className="min-h-[calc(100vh-60px)] p-8 bg-gray-300 m-4 flex flex-col justify-center items-center"
       >
-        <h2>Sección 3 - Fade Up Left</h2>
-        <p>Y esta sección, al igual que las anteriores, ocupa casi toda la altura.</p>
-        <p>¡Experimenta con diferentes contenidos y estilos!</p>
+        <h2 className="text-2xl font-semibold mb-4 text-center">Sección 3 - Fade Up Left</h2>
+        <p className="text-center">Y esta sección, al igual que las anteriores, ocupa casi toda la altura.</p>
+        <p className="text-center">¡Experimenta con diferentes contenidos y estilos!</p>
       </section>
+
+      <Footer/ >
     </>
   );
 }
