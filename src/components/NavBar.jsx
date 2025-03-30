@@ -9,7 +9,14 @@ const NavBar = () => {
   };
 
   return (
-    <div className="bg-green-100 p-4 flex items-center justify-between w-full">
+    
+    <>
+    <div className="bg-blue-950 p-4 flex  justify-end w-full text-white">
+      <span className='mr-3'>contacto: +56 97345754</span>
+      <span>email: vigesta@gmail.com</span>
+
+    </div>
+    <div className="bg-white p-4 flex items-center  w-full">
       <div className="flex items-center">
         <img src={logo} alt="Logo" className="h-12 w-12 rounded-full" />
         <span className="ml-2 text-lg font-semibold">Vigesta</span>
@@ -38,7 +45,7 @@ const NavBar = () => {
       <nav
         className={`${
           isMenuOpen ? 'flex flex-col mt-4' : 'hidden md:flex'
-        } md:flex md:items-center`}
+        } md:flex md:items-center md:underline md:ml-4 md:mb-[-3vh]`}
       >
         <a href="/" className="mx-2 text-gray-800 block md:inline-block py-2">
           Inicio
@@ -51,7 +58,8 @@ const NavBar = () => {
         </a>
       </nav>
     </div>
-  );
-};
+  
+    </>
+)};
 
 export default NavBar;

@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
+import construction from './assets/construction.png'
 
 function App() {
   useEffect(() => {
@@ -18,7 +19,7 @@ function App() {
 
       <section
         data-aos="fade-up"
-        className="min-h-[calc(100vh-60px)] p-8 bg-gray-100 m-4 flex flex-col justify-center items-center"
+        className="min-h-[calc(100vh-60px)] flex flex-col justify-center items-center bg-[url('./assets/construction.png')] bg-cover bg-center"
       >
         <h2 className="text-2xl font-semibold mb-4 text-center">Sección 1 - Fade Up Right</h2>
         <p className="text-center">Esta sección ocupa casi toda la altura de la pantalla, excepto el NavBar.</p>
